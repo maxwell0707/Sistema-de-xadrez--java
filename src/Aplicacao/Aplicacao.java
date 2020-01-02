@@ -1,10 +1,15 @@
 package Aplicacao;
 
+import JogoTabuleiro.Posicao;
+
 public class Aplicacao {
 
 	public static void main(String[] args) {
-	
-		System.out.println("hello word");
+		
+		
+		Posicao pos = new Posicao(3,5);
+		System.out.println(pos);
+
 	}
 
 }
