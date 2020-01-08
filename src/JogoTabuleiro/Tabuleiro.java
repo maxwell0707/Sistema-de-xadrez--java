@@ -22,14 +22,18 @@ public int getColuna() {
 public void setColuna(int coluna) {
 	this.coluna = coluna;
 }
-//Metodos comuns da classe
+
 public Peca peca(int linha, int coluna) {
 	return pecas[linha][coluna];
 }
-//SOBRECARGA
+
 public Peca peca(Posicao posicao) {
 	return pecas[posicao.getLinha()][posicao.getColuna()];
 }
-
+public void  colocarPeca(Peca peca,Posicao posicao) {
+	
+	pecas[posicao.getLinha()][posicao.getColuna()] = peca;
+	peca.posicao = posicao;
+}
 
 }
